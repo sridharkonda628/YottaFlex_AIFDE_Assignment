@@ -1,0 +1,9 @@
+customer_id,customer_name,email,tier,is_active
+CUST_0001,Alice Zhang,alice.zhang@example.com,Premium,true
+CUST_0002,Bob Smith,bob.smith@example.com,Standard,true
+CUST_0003,Carlos Mendes,carlos.m@example.com,Enterprise,true
+CUST_0004,Diana Prince,diana.p@example.com,Premium,true
+CUST_0005,Evan Wright,evan.w@example.com,Standard,true
+CUST_0006,Fatima Al-Mansoor,fatima.m@example.com,Enterprise,true
+CUST_0007,George Clark,george.c@example.com,Standard,true
+CUST_0008,Hannah Abbott,hannah.a@example.com,Premium,true

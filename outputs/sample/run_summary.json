@@ -1,0 +1,70 @@
+{
+  "run_id": "e2c31eac-0084-4cd8-8156-2351ba160086",
+  "source_file": "transactions_sample.csv",
+  "start_time": "2026-10-29T06:51:13.322170+00:00",
+  "end_time": "2026-10-29T06:51:15.210231+00:00",
+  "status": "SUCCESS",
+  "input_row_count": 100,
+  "validated_row_count": 94,
+  "new_event_count": 0,
+  "exact_duplicate_count": 93,
+  "conflicting_duplicate_count": 1,
+  "rejected_row_count": 7,
+  "target_row_count": 0,
+  "duration_seconds": 1.888,
+  "failure_reason": null,
+  "reconciliation_status": "PASSED",
+  "rejection_breakdown": {
+    "NEGATIVE_UNIT_PRICE": 4,
+    "UNKNOWN_CUSTOMER_ID": 1,
+    "UNKNOWN_PRODUCT_ID": 1,
+    "CONFLICTING_EVENT_PAYLOAD": 1
+  },
+  "reconciliation_report": {
+    "reconciliation_time": "2026-10-29T06:51:13.563020+00:00",
+    "overall_status": "PASSED",
+    "checks": [
+      {
+        "check_name": "target_pk_uniqueness",
+        "expected": 52,
+        "actual": 52,
+        "difference": 0,
+        "status": "PASS",
+        "diagnostic": "Primary key (metric_date, product_id) must have zero duplicates in target table."
+      },
+      {
+        "check_name": "global_units_sold",
+        "expected": 395,
+        "actual": 395,
+        "difference": 0,
+        "status": "PASS",
+        "diagnostic": "Authoritative ledger units sold vs target published units sold."
+      },
+      {
+        "check_name": "global_gross_revenue",
+        "expected": 45947.54,
+        "actual": 45947.54,
+        "difference": 0.0,
+        "status": "PASS",
+        "diagnostic": "Authoritative ledger revenue vs target published gross revenue."
+      },
+      {
+        "check_name": "global_partition_count",
+        "expected": 52,
+        "actual": 52,
+        "difference": 0,
+        "status": "PASS",
+        "diagnostic": "Number of active (metric_date, product_id) partitions."
+      },
+      {
+        "check_name": "per_partition_reconciliation",
+        "expected": "0 partition variances",
+        "actual": "0 partition variances",
+        "difference": 0,
+        "status": "PASS",
+        "diagnostic": "Every individual (metric_date, product_id) matches exact expected aggregates."
+      }
+    ],
+    "mismatch_count": 0
+  }
+}

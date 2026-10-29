@@ -1,0 +1,11 @@
+product_id,product_name,category,is_active
+PROD_001,Ultra Wireless Headphones,Electronics,true
+PROD_002,Ergonomic Mechanical Keyboard,Electronics,true
+PROD_003,Organic Fair-Trade Coffee Beans,Grocery,true
+PROD_004,Stainless Steel Water Bottle,Home & Kitchen,true
+PROD_005,Noise-Cancelling Earbuds,Electronics,true
+PROD_006,Smart Fitness Tracker Watch,Electronics,true
+PROD_007,Merino Wool Winter Beanie,Apparel,true
+PROD_008,Ceramic Pour-Over Dripper,Home & Kitchen,true
+PROD_009,Recycled Canvas Tote Bag,Apparel,true
+PROD_010,LED Desk Lamp with Wireless Charger,Home & Kitchen,true
